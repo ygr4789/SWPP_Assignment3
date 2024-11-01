@@ -12,11 +12,17 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI gameOverText;
     public TextMeshProUGUI gameClearText;
     public Button startButton;
+    public Button pauseButton;
+    public Button restartButton;
     public Button upgradeButton;
     
-    void Awake()
+    void Start()
     {
         GameManager.Instance.uiManager = this;
+        startButton.onClick.AddListener(GameManager.Instance.StageStart);
+        pauseButton.onClick.AddListener(GameManager.Instance.GamePause);
+        restartButton.onClick.AddListener(GameManager.Instance.GameRestart);
+        upgradeButton.onClick.AddListener(GameManager.Instance.UpgradePlayer);
     }
 
     public void UpdateStage(int stage)

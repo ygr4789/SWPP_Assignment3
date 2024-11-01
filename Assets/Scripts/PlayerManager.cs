@@ -17,13 +17,9 @@ public class PlayerManager : MonoBehaviour
     private float fireRate1 = 0.3f;
     private Vector3 throwPos;
 
-    private void Awake()
-    {
-        GameManager.Instance.playerManager = this;
-    }
-
     void Start()
     {
+        GameManager.Instance.playerManager = this;
         animator = player.GetComponent<Animator>();
         throwPos = player.transform.position + new Vector3(0, 0.5f, 0);
         StartCoroutine(Throw());

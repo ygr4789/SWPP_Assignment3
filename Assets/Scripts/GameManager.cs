@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public UIManager uiManager;
     [HideInInspector] public PlayerManager playerManager;
 
-    public GameObject player;
     public List<GameObject> enemyPfbs;
     public List<int> enemyCounts;
     
@@ -37,6 +36,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            instance.enemyPfbs = enemyPfbs;
+            instance.enemyCounts = enemyCounts;
             Destroy(this.gameObject);
         }
     }
@@ -95,6 +96,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Time.timeScale = 1;
+        isGameActive = true;
         stage = 0;
         life = 1;
         money = 0;
