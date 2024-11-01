@@ -1917,7 +1917,6 @@ MonoBehaviour:
   money: 0
   uiManager: {fileID: 0}
   playerManager: {fileID: 0}
-  player: {fileID: 405105442}
   enemyPfbs:
   - {fileID: 3409283251080709809, guid: f41e5d5036207f14e821ffe814ca82f9, type: 3}
   - {fileID: 2843930843921888856, guid: a0a0b508132bb1f4d99c075f4ccba594, type: 3}

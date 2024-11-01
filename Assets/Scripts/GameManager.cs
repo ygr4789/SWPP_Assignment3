@@ -68,7 +68,11 @@ public class GameManager : MonoBehaviour
 
     public void StageComplete()
     {
-        if(++stage >= totStage) GameClear();
+        if (++stage >= totStage)
+        {
+            GameClear();
+            return;
+        }
         uiManager.UpdateStage(stage + 1);
         uiManager.EnableStartButton();
     }

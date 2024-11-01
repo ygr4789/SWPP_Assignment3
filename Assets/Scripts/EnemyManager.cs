@@ -28,8 +28,8 @@ public class EnemyManager : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Goal"))
         {
-            gameManager.UpdateLife(1);
             gameManager.UpdateEnemy();
+            gameManager.UpdateLife(1);
             Destroy(gameObject);
         }
 
