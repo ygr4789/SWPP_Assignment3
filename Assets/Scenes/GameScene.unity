@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: a23bbe9da26035c4b804cb424ac13550, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: e7a52bc892015154f86754e857c8166d, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1925,6 +1925,8 @@ MonoBehaviour:
   stage: 0
   life: 1
   money: 0
+  uiManager: {fileID: 0}
+  playerManager: {fileID: 0}
   player: {fileID: 405105442}
   enemyPfbs:
   - {fileID: 3409283251080709809, guid: f41e5d5036207f14e821ffe814ca82f9, type: 3}
